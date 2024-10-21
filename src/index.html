@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="relative h-[100vh]">
+      <h1 class="text-3xl font-bold underline text-violet-700 text-center py-3">
+        Todo App
+      </h1>
+      <div
+        id="formContainer"
+        class="w-[600px] mx-auto mt-12 rounded-lg text-center px-2 py-2 hidden"
+      >
+        <div class="flex gap-1 justify-between items-center">
+          <input
+            id="taskTitle"
+            type="text"
+            class="w-[350px] outline-none px-2 py-2.5 rounded-lg border-neutral-900 border-2"
+            placeholder="enter your task"
+          />
+          <input
+            id="taskDate"
+            type="datetime-local"
+            class="w-[100px] outline-none px-2 py-2 rounded-lg border-2 border-neutral-900"
+            placeholder="enter your task"
+          />
+          <button
+            id="addTask"
+            class="px-6 py-3 bg-black text-white rounded-lg cursor-pointer"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+      <div
+        class="bg-violet-300 w-[600px] mx-auto overflow-auto h-[500px] px-2"
+        id="task-container"
+      >
+        <!-- <div
+          class="w-full mx-auto border border-neutral-500 mt-3 rounded-lg px-2 py-3"
+        >
+          <p class="text-xl font-bold">Task 1</p>
+          <p class="text-lg">Due Date:10/05/2000</p>
+          <div class="flex gap-4">
+            <button
+              id="task-complete"
+              class="text-neutral-400 hover:text-green-600 flex gap-3 font-light mt-2 text-sm items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-check2-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"
+                />
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"
+                />
+              </svg>
+              <span class="text-lg">Mark as done</span>
+            </button>
+            <button
+              id="task-delete"
+              class="text-neutral-400 hover:text-red-500 flex gap-3 font-light mt-2 text-sm items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-trash3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"
+                />
+              </svg>
+              <span class="text-lg">Delete</span>
+            </button>
+          </div>
+        </div> -->
+      </div>
+      <button
+        id="showBtn"
+        class="bg-black text-white px-6 py-2 rounded-lg absolute bottom-2 right-2 text-3xl font-bold"
+      >
+        +
+      </button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
